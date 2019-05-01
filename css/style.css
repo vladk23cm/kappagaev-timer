@@ -1,0 +1,11 @@
+.timer {
+	background-color:#d10000;
+	display: inline-block;
+	color:white;
+	padding: 1em;
+}
+.timer span {
+	background-color:#ff0000;
+	margin: 1em 0 1em 0;
+	padding: 0.5em;
+}
