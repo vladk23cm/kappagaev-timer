@@ -16,7 +16,7 @@ function countdown(dateEnd, el) {
 	                             dateStart.getUTCHours(),
 	                             dateStart.getUTCMinutes(),
 	                             dateStart.getUTCSeconds());
-	    var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
+	    var timeRemaining = parseInt(Math.abs((dateEnd - dateStart.getTime()) / 1000));
 	 
 	    if ( timeRemaining >= 0 ) {
 	      days    = parseInt(timeRemaining / 86400);
@@ -41,7 +41,7 @@ function countdown(dateEnd, el) {
 
 jQuery(document).ready(function($) {
 	
-	$('.countdown').each(function () {
+	$('.kappagev-timer').each(function () {
 		var el = $(this);
 		countdown(el.attr('time'), el);
 	});
